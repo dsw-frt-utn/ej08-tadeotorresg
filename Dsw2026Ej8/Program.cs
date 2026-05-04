@@ -1,15 +1,25 @@
-﻿namespace Dsw2026Ej8
+﻿using Dsw2026Ej8;
+
+
+namespace Dsw2026Ej8
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Problema2 venta = new Problema2();
+            Problema3 problema = new Problema3();
+            int numeroOriginal = 5;
+            Product miProducto = new Product("Teclado Viejo");
 
-            String resultado = venta.CrearResumenVenta(12345, "Agua Mineral", 3, 2000.50m);
+            
+            string resultado = problema.CompararCopias(numeroOriginal, miProducto);
 
-            Console.WriteLine("La etiqueta generada es:");
+            
+            Console.WriteLine("El resultado del Problema 3 es:");
             Console.WriteLine(resultado);
+
+           
+            Console.ReadLine();
         }
     }
 }
