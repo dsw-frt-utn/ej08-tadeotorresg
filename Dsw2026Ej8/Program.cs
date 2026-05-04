@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ProductHelper helper = new ProductHelper();
+
+            long code = 12345;
+            string description = "Coca Cola";
+            decimal price = 2000.50m;
+
+            String resultado = helper.ObtenerEtiquetaProducto (code, description, price);
+
+            Console.WriteLine("La etiqueta generada es:");
+            Console.WriteLine(resultado);
         }
     }
 }
