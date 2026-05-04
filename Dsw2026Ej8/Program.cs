@@ -7,19 +7,11 @@ namespace Dsw2026Ej8
     {
         static void Main(string[] args)
         {
-            Problema3 problema = new Problema3();
-            int numeroOriginal = 5;
-            Product miProducto = new Product("Teclado Viejo");
-
-            
-            string resultado = problema.CompararCopias(numeroOriginal, miProducto);
-
-            
-            Console.WriteLine("El resultado del Problema 3 es:");
-            Console.WriteLine(resultado);
+           Problema4 prob4 = new Problema4();
 
            
-            Console.ReadLine();
+            double prom = prob4.CalcularPromedio(8, 10, 6);
+            Console.WriteLine($"Prueba 1: {prom}"); 
         }
     }
 }
