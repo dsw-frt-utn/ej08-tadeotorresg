@@ -7,11 +7,21 @@ namespace Dsw2026Ej8
     {
         static void Main(string[] args)
         {
-           Problema4 prob4 = new Problema4();
+            Problema5 prob5 = new Problema5();
 
-           
-            double prom = prob4.CalcularPromedio(8, 10, 6);
-            Console.WriteLine($"Prueba 1: {prom}"); 
+            
+            Sale ventaMinorista = new RetailSale(1000m);
+            Sale ventaMayorista = new WholesaleSale(1000m);
+
+            
+            decimal totalMinorista = Problema5.ObtenerImporteFinal(ventaMinorista);
+            Console.WriteLine($"Total Minorista: {totalMinorista}"); 
+
+            
+            decimal totalMayorista = Problema5.ObtenerImporteFinal(ventaMayorista);
+            Console.WriteLine($"Total Mayorista: {totalMayorista}"); 
+
+            Console.ReadLine();
         }
     }
 }
