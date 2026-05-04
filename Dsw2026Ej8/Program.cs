@@ -4,13 +4,9 @@
     {
         static void Main(string[] args)
         {
-            ProductHelper helper = new ProductHelper();
+            Problema2 venta = new Problema2();
 
-            long code = 12345;
-            string description = "Coca Cola";
-            decimal price = 2000.50m;
-
-            String resultado = helper.ObtenerEtiquetaProducto (code, description, price);
+            String resultado = venta.CrearResumenVenta(12345, "Agua Mineral", 3, 2000.50m);
 
             Console.WriteLine("La etiqueta generada es:");
             Console.WriteLine(resultado);
