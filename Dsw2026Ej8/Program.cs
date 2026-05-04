@@ -7,21 +7,12 @@ namespace Dsw2026Ej8
     {
         static void Main(string[] args)
         {
-            Problema5 prob5 = new Problema5();
+            Problema6 prob6 = new Problema6();
 
             
-            Sale ventaMinorista = new RetailSale(1000m);
-            Sale ventaMayorista = new WholesaleSale(1000m);
-
-            
-            decimal totalMinorista = Problema5.ObtenerImporteFinal(ventaMinorista);
-            Console.WriteLine($"Total Minorista: {totalMinorista}"); 
-
-            
-            decimal totalMayorista = Problema5.ObtenerImporteFinal(ventaMayorista);
-            Console.WriteLine($"Total Mayorista: {totalMayorista}"); 
-
-            Console.ReadLine();
+            string codigoEjemplo = " ab 123 x ";
+            string resultado1 = prob6.NormalizarCodigoProducto(codigoEjemplo);
+            Console.WriteLine($"Prueba Ejemplo: {resultado1}");
         }
     }
 }
